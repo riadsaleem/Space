@@ -1,0 +1,344 @@
+/* Bootstrap Custom CSS */
+.galaxies-page {
+    background-image: url(../images/digital-art-dark-cosmic-night-sky.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, rgba(227, 156, 56, 0.1), rgba(0, 0, 0, 0.3));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(227, 156, 56, 0.2);
+}
+
+.hero-section h1 {
+    background: linear-gradient(45deg, #fff, var(--mc));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-title {
+    color: var(--mc);
+    font-size: 2.2em;
+    margin-bottom: 2rem;
+}
+
+/* Galaxy Cards */
+.galaxy-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(227, 156, 56, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.galaxy-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(227, 156, 56, 0.2);
+    border-color: rgba(227, 156, 56, 0.4);
+}
+
+.galaxy-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.galaxy-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(227, 156, 56, 0.1));
+}
+
+/* Galaxy Types */
+.spiral-galaxy {
+    background-image: url(../images/galaxy-nebula-wide.jpg);
+}
+
+.elliptical-galaxy {
+    background-image: url(../images/nebula-beautiful.jpg);
+}
+
+.irregular-galaxy {
+    background-image: url(../images/nebula-purple.jpg);
+}
+
+.galaxy-card .card-body {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.galaxy-card .card-title {
+    color: var(--mc) !important;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.galaxy-stats {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(227, 156, 56, 0.3);
+}
+
+/* Famous Galaxy Cards */
+.famous-galaxy-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(227, 156, 56, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.famous-galaxy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(227, 156, 56, 0.2);
+}
+
+.galaxy-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.milky-way {
+    background-image: url(../images/solar-system-landscape.jpg);
+}
+
+.andromeda {
+    background-image: url(../images/space-vertical-1.jpg);
+}
+
+.famous-galaxy-card .card-body {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.galaxy-details {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(227, 156, 56, 0.3);
+}
+
+/* Formation Card */
+.formation-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(227, 156, 56, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.formation-card .card-header {
+    background: rgba(227, 156, 56, 0.2);
+    border-bottom: 1px solid rgba(227, 156, 56, 0.3);
+    padding: 20px;
+}
+
+.formation-card .card-body {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 30px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--mc);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 80px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: var(--mc);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.timeline-content h6 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.timeline-content p {
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Fact Cards */
+.fact-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(227, 156, 56, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+    background: rgba(227, 156, 56, 0.1);
+    box-shadow: 0 15px 35px rgba(227, 156, 56, 0.2);
+}
+
+.fact-card .card-body {
+    color: #fff;
+    padding: 25px;
+}
+
+.fact-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--mc);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #000;
+    font-size: 1.5em;
+}
+
+.fact-card h4 {
+    color: var(--mc) !important;
+    font-size: 1.8em;
+    margin: 15px 0 10px;
+}
+
+.fact-card .card-text {
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* Bootstrap Responsive Overrides */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 1.5rem !important;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem !important;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    .galaxy-img {
+        height: 150px;
+    }
+
+    .galaxy-image {
+        height: 120px;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-marker {
+        left: 5px;
+        width: 25px;
+        height: 25px;
+        font-size: 0.8em;
+    }
+
+    .timeline-item {
+        padding-left: 60px;
+    }
+
+    .fact-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    .fact-card h4 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .hero-section {
+        padding: 2rem 1rem !important;
+    }
+
+    .galaxy-card .card-body,
+    .famous-galaxy-card .card-body,
+    .fact-card .card-body {
+        padding: 20px 15px;
+    }
+
+    .formation-card .card-body {
+        padding: 20px 15px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+    }
+}
+
+/* Text Color Overrides for Bootstrap */
+.text-warning {
+    color: var(--mc) !important;
+}
+
+.text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Card Hover Effects */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Lead Text */
+.lead {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1em;
+    line-height: 1.6;
+}

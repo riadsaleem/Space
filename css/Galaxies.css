@@ -1,0 +1,491 @@
+.galaxies-main {
+    padding: 20px 0;
+}
+
+.page-hero {
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, rgba(227, 156, 56, 0.1), rgba(0, 0, 0, 0.3));
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.page-hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #fff, var(--mc));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-hero p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.galaxy-types {
+    margin: 60px 0;
+}
+
+.galaxy-types h2 {
+    color: var(--mc);
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.types-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galaxy-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 0;
+    border: 1px solid rgba(227, 156, 56, 0.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.galaxy-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(227, 156, 56, 0.3);
+    border-color: rgba(227, 156, 56, 0.5);
+}
+
+.galaxy-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.spiral-galaxy {
+    background-image: linear-gradient(45deg, rgba(227, 156, 56, 0.3), rgba(0, 0, 0, 0.5)), url('../images/galaxy-nebula-3.jpg');
+}
+
+.elliptical-galaxy {
+    background-image: linear-gradient(45deg, rgba(227, 156, 56, 0.3), rgba(0, 0, 0, 0.5)), url('../images/nebula-hubble-2.jpg');
+}
+
+.irregular-galaxy {
+    background-image: linear-gradient(45deg, rgba(227, 156, 56, 0.3), rgba(0, 0, 0, 0.5)), url('../images/nebula-cosmic-1.jpg');
+}
+
+.galaxy-info {
+    padding: 25px;
+}
+
+.galaxy-info h3 {
+    color: var(--mc);
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.galaxy-info p {
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.galaxy-stats {
+    padding-top: 15px;
+    border-top: 1px solid rgba(227, 156, 56, 0.2);
+}
+
+.galaxy-stats span {
+    color: var(--mc);
+    font-size: 0.9em;
+}
+
+.galaxy-stats i {
+    margin-left: 5px;
+}
+
+.famous-galaxies {
+    margin: 60px 0;
+}
+
+.famous-galaxies h2 {
+    color: var(--mc);
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.famous-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.famous-galaxy-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(227, 156, 56, 0.2);
+    transition: all 0.3s ease;
+}
+
+.famous-galaxy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(227, 156, 56, 0.2);
+}
+
+.galaxy-image {
+    flex-shrink: 0;
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.milky-way {
+    background-image: linear-gradient(45deg, rgba(227, 156, 56, 0.3), rgba(0, 0, 0, 0.5)), url('../images/galaxy-space-5.jpg');
+}
+
+.andromeda {
+    background-image: linear-gradient(45deg, rgba(227, 156, 56, 0.3), rgba(0, 0, 0, 0.5)), url('../images/galaxy-nebula-wide.jpg');
+}
+
+.galaxy-details {
+    flex: 1;
+}
+
+.galaxy-details h3 {
+    color: var(--mc);
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.galaxy-details p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.galaxy-properties {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.property {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(227, 156, 56, 0.2);
+}
+
+.property .label {
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.property .value {
+    color: var(--mc);
+    font-weight: bold;
+}
+
+.galaxy-formation {
+    margin: 60px 0;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(227, 156, 56, 0.2);
+}
+
+.galaxy-formation h2 {
+    color: var(--mc);
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.formation-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--mc);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 80px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--mc);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #000;
+}
+
+.timeline-content h4 {
+    color: var(--mc);
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.timeline-content p {
+    line-height: 1.6;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.galaxy-facts {
+    margin: 60px 0;
+}
+
+.galaxy-facts h2 {
+    color: var(--mc);
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fact-card {
+    text-align: center;
+    padding: 30px 25px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    border: 1px solid rgba(227, 156, 56, 0.2);
+    transition: all 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(227, 156, 56, 0.2);
+    border-color: rgba(227, 156, 56, 0.4);
+}
+
+.fact-icon {
+    font-size: 3em;
+    color: var(--mc);
+    margin-bottom: 20px;
+}
+
+.fact-card h4 {
+    color: var(--mc);
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.fact-card p {
+    line-height: 1.5;
+    opacity: 0.9;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .types-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    .famous-galaxy-card {
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .galaxy-image {
+        width: 150px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 2em;
+    }
+
+    .page-hero p {
+        font-size: 1em;
+    }
+
+    .types-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .famous-galaxy-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    .galaxy-image {
+        width: 200px;
+        height: 150px;
+    }
+
+    .galaxy-formation {
+        padding: 30px 15px;
+        margin: 40px 0;
+    }
+
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline-marker {
+        left: 5px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+    }
+
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .fact-card {
+        padding: 25px 20px;
+    }
+
+    .fact-icon {
+        font-size: 2.5em;
+    }
+
+    .fact-card h4 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        padding: 40px 15px;
+        margin-bottom: 30px;
+    }
+
+    .page-hero h1 {
+        font-size: 1.8em;
+    }
+
+    .page-hero p {
+        font-size: 0.95em;
+    }
+
+    .galaxy-types,
+    .famous-galaxies,
+    .galaxy-facts {
+        margin: 40px 0;
+    }
+
+    .galaxy-types h2,
+    .famous-galaxies h2,
+    .galaxy-formation h2,
+    .galaxy-facts h2 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .galaxy-card {
+        margin-bottom: 20px;
+    }
+
+    .galaxy-info {
+        padding: 20px;
+    }
+
+    .galaxy-info h3 {
+        font-size: 1.2em;
+    }
+
+    .galaxy-details h3 {
+        font-size: 1.4em;
+    }
+
+    .galaxy-formation {
+        padding: 25px 10px;
+        margin: 30px 0;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+        padding-left: 40px;
+    }
+
+    .timeline-content h4 {
+        font-size: 1.1em;
+    }
+
+    .timeline-content p {
+        font-size: 0.9em;
+    }
+
+    .facts-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .fact-card {
+        padding: 20px 15px;
+    }
+
+    .fact-icon {
+        font-size: 2em;
+    }
+
+    .fact-card h4 {
+        font-size: 1.4em;
+    }
+
+    .fact-card p {
+        font-size: 0.9em;
+    }
+}

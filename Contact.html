@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/Contact.css">
+    <title>تواصل معنا - رحلة حول الفضاء</title>
+</head>
+
+<body class="contact-page">
+
+    <header>
+        <div class="start-header">
+            <div class="logo">
+                <H3><span>S</span>pa<span>c</span>e</H3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="About.html">حول الفضاء</a></li>
+                    <li><a href="Planets.html">الكواكب</a></li>
+                    <li><a href="Galaxies.html">المجرات</a></li>
+                    <li><a href="Stars.html">النجوم</a></li>
+                    <li><a href="Contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="end-header">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="#" method="get">
+                    <input type="search" name="search" placeholder="البحث..." autocomplete="on">
+                </form>
+            </div>
+            <a href="auth.html">تسجيل الدخول</a>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <section class="page-hero">
+            <h1>تواصل معنا</h1>
+            <p>نحن هنا للإجابة على استفساراتك ومشاركة شغفك باستكشاف الفضاء</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>معلومات التواصل</h2>
+                <p>يسعدنا التواصل معك عبر القنوات التالية:</p>
+
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>الهاتف</h3>
+                            <a href="tel:+967775630269">+967 775630269</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>البريد الإلكتروني</h3>
+                            <a href="mailto:riadsaleem123@gmail.com">riadsaleem123@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>الموقع</h3>
+                            <a href="https://maps.app.goo.gl/ci2VM9NtcaTgy7cq8" target="_blank">عرض على الخريطة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <h3>تابعنا على وسائل التواصل الاجتماعي</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/967775630269" target="_blank" class="social-link whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>واتساب</span>
+                        </a>
+
+                        <a href="https://instagram.com/riad_althwaby" target="_blank" class="social-link instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>إنستجرام</span>
+                        </a>
+
+                        <a href="https://t.me/O_X_R1" target="_blank" class="social-link telegram">
+                            <i class="fa-brands fa-telegram"></i>
+                            <span>تيليجرام</span>
+                        </a>
+
+                        <a href="https://youtube.com/@quran20901?si=n33qWvrXhlokbJss" target="_blank"
+                            class="social-link youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>يوتيوب</span>
+                        </a>
+
+                        <a href="https://www.facebook.com/share/1ACB7kQU6j/" target="_blank"
+                            class="social-link facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>فيسبوك</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>أرسل لنا رسالة</h2>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">الموضوع</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">اختر الموضوع</option>
+                            <option value="general">استفسار عام</option>
+                            <option value="planets">أسئلة حول الكواكب</option>
+                            <option value="galaxies">أسئلة حول المجرات</option>
+                            <option value="stars">أسئلة حول النجوم</option>
+                            <option value="space-exploration">استكشاف الفضاء</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">الرسالة</label>
+                        <textarea id="message" name="message" rows="6" placeholder="اكتب رسالتك هنا..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">أرغب في الاشتراك في النشرة الإخبارية لتلقي آخر أخبار الفضاء</label>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        إرسال الرسالة
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 رحلة حول الفضاء. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/6ee73906e7.js" crossorigin="anonymous"></script>
+    
+    <!-- إشعار النجاح -->
+    <div id="success-notification" class="success-notification">
+        <i class="fa-solid fa-check-circle"></i>
+        <span>تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.</span>
+        <button class="close-btn" onclick="closeNotification()">&times;</button>
+    </div>
+
+    <script>
+        // معالج إرسال النموذج
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // منع إرسال النموذج الافتراضي
+            
+            // إظهار إشعار النجاح
+            showSuccessNotification();
+            
+            // إعادة تعيين النموذج
+            this.reset();
+        });
+
+        function showSuccessNotification() {
+            const notification = document.getElementById('success-notification');
+            notification.classList.add('show');
+            
+            // إخفاء الإشعار تلقائياً بعد 5 ثوانٍ
+            setTimeout(() => {
+                closeNotification();
+            }, 5000);
+        }
+
+        function closeNotification() {
+            const notification = document.getElementById('success-notification');
+            notification.classList.remove('show');
+        }
+    </script>
+</body>
+
+</html>

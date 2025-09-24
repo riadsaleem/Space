@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول وإنشاء حساب - رحلة حول الفضاء</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="auth-page">
+
+    <header>
+        <div class="start-header">
+            <div class="logo">
+                <H3><span>S</span>pa<span>c</span>e</H3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="About.html">حول الفضاء</a></li>
+                    <li><a href="Planets.html">الكواكب</a></li>
+                    <li><a href="Galaxies.html">المجرات</a></li>
+                    <li><a href="Stars.html">النجوم</a></li>
+                    <li><a href="Contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="end-header">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="#" method="get">
+                    <input type="search" name="search" placeholder="البحث..." autocomplete="on">
+                </form>
+            </div>
+            <a href="auth.html">تسجيل الدخول</a>
+        </div>
+    </header>
+
+    <main class="auth-main">
+        <div class="auth-wrapper">
+            <input type="checkbox" id="form-toggle" hidden>
+
+            <div class="auth-container login-form-container">
+                <h2>تسجيل الدخول</h2>
+                <form class="auth-form login-form" action="#" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="login-email">البريد الإلكتروني:</label>
+                        <input type="email" id="login-email" name="email" placeholder="أدخل بريدك الإلكتروني" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="email">
+                        <span class="validation-message">الرجاء إدخال بريد إلكتروني صالح.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">كلمة المرور:</label>
+                        <input type="password" id="login-password" name="password" placeholder="أدخل كلمة المرور"
+                            required minlength="6" autocomplete="current-password">
+                        <span class="validation-message">كلمة المرور يجب أن لا تقل عن 6 أحرف.</span>
+                    </div>
+                    <button type="submit" class="btn">تسجيل الدخول</button>
+                    <p class="switch-form">ليس لديك حساب؟ <label for="form-toggle">إنشاء حساب جديد</label></p>
+                </form>
+            </div>
+
+            <div class="auth-container register-form-container">
+                <h2>إنشاء حساب جديد</h2>
+                <form class="auth-form register-form" action="#" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="register-username">اسم المستخدم:</label>
+                        <input type="text" id="register-username" name="username" placeholder="أدخل اسم المستخدم"
+                            required minlength="3" maxlength="20" pattern="[a-zA-Z0-9_\u0600-\u06FF]+"
+                            autocomplete="username">
+                        <span class="validation-message">اسم المستخدم يجب أن يكون بين 3-20 حرف ولا يحتوي على رموز
+                            خاصة.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">البريد الإلكتروني:</label>
+                        <input type="email" id="register-email" name="email" placeholder="أدخل بريدك الإلكتروني"
+                            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="email">
+                        <span class="validation-message">الرجاء إدخال بريد إلكتروني صالح.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">كلمة المرور:</label>
+                        <input type="password" id="register-password" name="password" placeholder="أدخل كلمة المرور"
+                            required minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
+                            autocomplete="new-password">
+                        <span class="validation-message">كلمة المرور يجب أن تحتوي على 8 أحرف على الأقل، حرف كبير، حرف
+                            صغير، ورقم.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">تأكيد كلمة المرور:</label>
+                        <input type="password" id="register-confirm-password" name="confirm-password"
+                            placeholder="أعد إدخال كلمة المرور" required minlength="8" autocomplete="new-password">
+                        <span class="validation-message">كلمة المرور غير متطابقة.</span>
+                    </div>
+                    <button type="submit" class="btn">إنشاء حساب</button>
+                    <p class="switch-form">لديك حساب بالفعل؟ <label for="form-toggle">تسجيل الدخول</label></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 رحلة حول الفضاء. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <style>
+        .success-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 128, 0, 0.9);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 1000;
+            display: none;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .success-message.show {
+            display: block;
+            animation: fadeInOut 3s ease-in-out;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+
+            20% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            80% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+        }
+    </style>
+
+    <div id="success-message" class="success-message">
+        <h3 id="success-title"></h3>
+        <p id="success-text"></p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginForm = document.querySelector('.login-form');
+            const registerForm = document.querySelector('.register-form');
+            const successMessage = document.getElementById('success-message');
+            const successTitle = document.getElementById('success-title');
+            const successText = document.getElementById('success-text');
+
+            function showSuccessMessage(title, text) {
+                successTitle.textContent = title;
+                successText.textContent = text;
+                successMessage.classList.add('show');
+
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 500);
+                }, 2500);
+            }
+
+            loginForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                showSuccessMessage('تم تسجيل الدخول بنجاح!', 'مرحباً بك مرة أخرى. سيتم توجيهك إلى الصفحة الرئيسية.');
+            });
+
+            registerForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const password = document.getElementById('register-password').value;
+                const confirmPassword = document.getElementById('register-confirm-password').value;
+
+                if (password !== confirmPassword) {
+                    alert('كلمة المرور غير متطابقة');
+                    return;
+                }
+
+                showSuccessMessage('تم إنشاء الحساب بنجاح!', 'مرحباً بك في رحلة حول الفضاء. سيتم توجيهك إلى الصفحة الرئيسية.');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
