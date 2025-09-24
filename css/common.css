@@ -206,8 +206,9 @@ footer {
     }
 
     .end-header > a {
+    
         flex-shrink: 0;
         white-space: nowrap;
-        padding: 8px 15px;
+        padding: 6px 15px;
     }
 }
