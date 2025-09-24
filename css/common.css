@@ -125,6 +125,7 @@ header {
 }
 
 .end-header a {
+    font-size: 14px;
     color: #fff;
     text-decoration: none;
     border: 2px solid rgba(227, 156, 56, 0.5);
@@ -209,6 +210,5 @@ footer {
     
         flex-shrink: 0;
         white-space: nowrap;
-        padding: 6px 15px;
     }
 }
